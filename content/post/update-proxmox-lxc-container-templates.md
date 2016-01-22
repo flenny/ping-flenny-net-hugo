@@ -1,10 +1,10 @@
 +++
 date = "2016-01-21T18:04:43+01:00"
-description = "abstract"
+description = "Learn how to setup and update Proxmox Virtual Environment lxc container templates."
 draft = false
 tags = ["virtualization", "proxmox", "lxc"]
 title = "How to update proxmox lxc container templates"
-
+image = "images/post/default-post.png"
 +++
 
 By default lxc container templates are not available after installing Proxmox Virtual Environment. In order to enable templates for Ubuntu, Joomla, OwnCloud, WordRress or OpenVPN run the following command on your hosts console.
