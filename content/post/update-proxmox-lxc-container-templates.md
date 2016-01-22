@@ -13,4 +13,4 @@ By default lxc container templates are not available after installing Proxmox Vi
 
 You will find the templates right on your local storage > content > templates.
 
-![lxc container templates](/post/pve-lxc-update.png)
+![lxc container templates](/images/post/pve-lxc-update.png)
