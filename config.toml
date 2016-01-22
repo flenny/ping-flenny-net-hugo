@@ -1,0 +1,31 @@
+baseurl = "https://ping.flenny.net/"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+languageCode = "en-us"
+title = "ping.flenny.net"
+paginate = 8
+theme = "crisp"
+
+[params]
+    twitter = "flennynet"
+    description = "Personal website and blog of Oliver Gut"
+    email = "oliver.gut@flenny.net"
+    ga = "UA-72187995-1"
+    hostname = "ping.flenny.net"
+	disqus = "flennynet"
+
+[permalinks]
+    post = "/:year/:title/"
+    addendum = "/addendum/:year/:title/"
+
+[author]
+    name = "Oliver Gut"
+    twitter = "flenny.net"
+    email = "oliver.gut@flenny.net"
+    birthDate = "1983-03-24"
+    familyName = "Gut"
+    givenName = "Oliver"
+    nationality = "CH"
+    gender = "male"
