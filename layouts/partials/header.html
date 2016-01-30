@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} {{ end }}" />
+        <meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
         <meta property="og:site_name" content="{{ .Site.Title }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
 
@@ -27,7 +27,7 @@
         <meta property="og:type" content="website" />
     {{ end }}
 
-        <title>{{ if ne .URL "/" }} {{ .Title }} {{ end }}</title>
+        <title>{{ if ne .URL "/" }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
     {{ if .Description }}
         <meta name="description" content="{{ .Description }}" />
@@ -105,8 +105,8 @@
             <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
 
             {{ partial "follow.html" . }}
-            <!--{{ partial "navigation.html" . }}
-            {{ partial "tags.html" . }}
+            {{ partial "navigation.html" . }}
+            <!--{{ partial "tags.html" . }}
             {{ partial "search.html" . }}-->
             
         </header>
