@@ -15,10 +15,13 @@ theme = "crisp"
     ga = "UA-72187995-1"
     hostname = "ping.flenny.net"
 	disqus = "flennynet"
+	github = "flenny"
+	githubrepo = "ping-flenny-net-hugo"
+	stackoverflow = "flenny"
+	gplus = "OliverGut"
 
 [permalinks]
     post = "/:year/:title/"
-    addendum = "/addendum/:year/:title/"
 
 [author]
     name = "Oliver Gut"
