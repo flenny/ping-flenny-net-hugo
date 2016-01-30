@@ -9,7 +9,7 @@ body,html
 {
 	font-size: 1em;
 	line-height: 1.65em;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #34495e;
 	background-color: #ffffff;
@@ -67,47 +67,14 @@ h4,h5,h6,hr,p
 
 h1,h2,h3,h4,h5,h6
 {
-	font-family: "Superior",Georgia,"Times New Roman",Times,serif;
-	font-weight: bold!important;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
 }
 
 h1
 {
-	font-size: 2.5em;
-	line-height: 1.1em;
-	margin-top: .6em;
-	margin-bottom: .6em;
-}
-
-h2
-{
-	font-size: 1.9em;
+	font-size: 2em;
 	line-height: 1.2em;
-	margin-top: .7em;
-	margin-bottom: .7em;
-}
-
-h3
-{
-	font-size: 1.4em;
-	line-height: 1.3em;
-	margin-top: .8em;
-	margin-bottom: .8em;
-}
-
-h4
-{
-	font-size: 1.3em;
-}
-
-h5
-{
-	font-size: 1.2em;
-}
-
-h6
-{
-	font-size: 1.1em;
 }
 
 iframe,img
@@ -117,7 +84,6 @@ iframe,img
 
 a
 {
-	font-weight: 700;
 	text-decoration: none;
 	color: #5BBE57;
 }
@@ -125,11 +91,6 @@ a
 a:hover
 {
 	text-decoration: underline;
-}
-
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a
-{
-	font-weight: 400;
 }
 
 strong
@@ -158,15 +119,14 @@ ol,ul
 
 code
 {
-	font-size: 1.2em;
-	background: #bdc3c7;
+	font-size: .9em;
+	background: #f0f0f0;
+	font-family: 'Roboto Mono';
 }
 
 pre
 {
-	font-size: .8em;
 	line-height: 2em;
-	background: #5BBE57;
 	padding: .2em;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -183,7 +143,7 @@ input
 
 header h1
 {
-	font-size: 1.9em;
+	font-size: 1.8em;
 	margin-top: .8em;
 	margin-bottom: .6em;
 }
@@ -206,8 +166,8 @@ header #logo img
 
 #follow-icons
 {
-	font-size: .7em;
-	margin-top: -.7em;
+	font-size: .8em;
+	margin-top: -.6em;
 	margin-bottom: 1.5em;
 }
 
@@ -251,10 +211,7 @@ h3.post-title
 	margin-top: .4em;
 	padding-bottom: .9em;
 	border-bottom: 1px solid #bdc3c7;
-	font-size: 1.2em;
 	color: #34495e;
-	font-family: "Lato",sans-serif;
-	font-weight: 700!important;
 }
 
 .sitetaglist
@@ -304,9 +261,8 @@ h3.post-title>time
     padding: .3em .6em;
     vertical-align: 20%;
     font-size: .5em;
-    font-weight: 700!important;
     text-transform: uppercase;
-    letter-spacing: .05em;
+    letter-spacing: .1em;
     border-radius: .25em;
     -moz-border-radius: .25em;
     -webkit-border-radius: .25em;
@@ -425,10 +381,15 @@ footer a:hover
 	width: 11.25em;
 }
 
-.gs-image-box,.gsc-above-wrapper-area,.gsc-cursor-box,.gsc-url-bottom,.gsc-thumbnail,.gs-per-result-labels
+.gs-image-box,.gcsc-branding,.gsc-above-wrapper-area,.gsc-cursor-box,.gsc-url-bottom,.gsc-thumbnail,.gs-per-result-labels, .gsc-url-top
 {
 	display: none!important;
 	visibility: hidden!important;
+}
+
+.gsc-table-result, .gsc-thumbnail-inside
+{
+	padding-left: 0px!important;
 }
 
 .gsc-control-cse,.gsc-results
@@ -442,15 +403,17 @@ footer a:hover
 
 .gsc-result
 {
+	margin-top: 1em!important;
 	border: inherit!important;
 	background: inherit!important;
 	padding: inherit!important;
 }
 
-.gs-title
+.gs-title, .gs-title b
 {
-	font-family: "Lato",sans-serif!important;
-	color: #e74c3c!important;
+	font-family: 'Roboto Slab', serif!important;
+	font-size: 1.1em!important;
+	color: #5BBE57!important;
 	text-decoration: none!important;
 	height: inherit!important;
 	overflow: inherit!important;
@@ -459,7 +422,8 @@ footer a:hover
 .gs-snippet
 {
 	color: inherit!important;
-	font-family: "Lato",sans-serif!important;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em!important;
 	height: inherit!important;
 	overflow: inherit!important;
 }
