@@ -24,4 +24,4 @@ deploy:
         clean_removed_files: true
         branch: master
         repo: flenny/flenny.github.io
-        gh_pages_domain: ping.flenny.net
+        gh_pages_domain: flenny.github.io
