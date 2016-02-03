@@ -8,6 +8,8 @@ title = "SSH into a proxmox LXC container"
 comments = true
 +++
 
+{{< figure src="/images/post/logo/proxmox.png" class="img-responsive center-block" alt="Proxmox" >}}
+
 By default it's not possible to establish a direct SSH connection to a proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through proxmox host or you allow login with password on the specific container.
 
 ## Option #1: Attach to the container through proxmox host  ##
