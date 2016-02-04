@@ -1,20 +1,20 @@
 +++
 date = "2016-01-26T16:46:46+01:00"
-description = "Learn how to SSH into a proxmox lxc container."
+description = "Learn how to SSH into a Proxmox lxc container."
 draft = false
 image = "images/post/default-post.png"
 tags = ["proxmox", "lxc", "virtualization"]
-title = "SSH into a proxmox LXC container"
+title = "SSH into a Proxmox LXC container"
 comments = true
 +++
 
 {{< figure src="/images/post/logo/proxmox.png" class="img-responsive center-block" alt="Proxmox" >}}
 
-By default it's not possible to establish a direct SSH connection to a proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through proxmox host or you allow login with password on the specific container.
+By default it's not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.
 
-## Option #1: Attach to the container through proxmox host  ##
+## Option #1: Attach to the container through Proxmox host  ##
 
-Login to your proxmox host and attach to the container with the following command.
+Login to your Proxmox host and attach to the container with the following command.
 
     lxc-attach --name 109
 
@@ -26,7 +26,7 @@ The name of the container corresponds to the unique VM ID which you can see in t
 
 ## Option #2: Allow login with password on the specific container  ##
 
-By default a proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your proxmox host and attach to the container with the following command.
+By default a Proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your Proxmox host and attach to the container with the following command.
 
     lxc-attach --name 109
 
