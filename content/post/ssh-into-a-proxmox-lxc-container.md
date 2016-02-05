@@ -42,4 +42,4 @@ Restart ssh service for the changes to take effect.
 
     service ssh restart
 
-Try to establish a direct SSH connection to your container's IP (If you don't know the container's IP you can run `ifconfig`).
+Try to establish a direct SSH connection to your container's IP (If you don't know the container's IP run `ifconfig`).

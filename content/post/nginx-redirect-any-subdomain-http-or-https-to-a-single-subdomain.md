@@ -1,7 +1,7 @@
 +++
 comments = true
 date = "2016-02-03T19:37:18+01:00"
-description = "Learn how to redirect HTTP to HTTPS and any subdomain to a single subdomain."
+description = "Learn how to redirect HTTP to HTTPS and any subdomain to a single HTTPS subdomain."
 draft = false
 image = "images/post/default-post.png"
 tags = ["nginx", "ssl"]
@@ -40,7 +40,7 @@ In order to redirect both schemes (http and https) to a single subdomain you hav
 		}
 	}
 
-For a specific port you can only have one ssl configuration section (`ssl_certificate`, `ssl_certificate_key`). As shown in the example above you use the keyword `default` to flag the appropriate `server` block.
+For a specific port you can only have one ssl configuration section (`ssl_certificate`, `ssl_certificate_key`). As shown in the example above use the keyword `default` to flag the appropriate `server` block.
 
 **Important:** In order to properly redirect e.g. https://blog.flenny.net to https://ping.flenny.net you must have a valid ssl certificate for both subdomains.
 
