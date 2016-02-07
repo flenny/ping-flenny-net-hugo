@@ -8,24 +8,24 @@
       asyncLoader([
         "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css",
         "//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js",
+        "{{ .Site.BaseURL }}css/prism.css",
         "{{ .Site.BaseURL }}js/prism.js",
-        "{{ .Site.BaseURL }}css/prism.css"
+        "{{ .Site.BaseURL }}css/rrssb.css"
       ],{
         callback:function() {
-        	Prism.highlightAll(false);
-          asyncLoader([
-            "{{ .Site.BaseURL }}css/rrssb.css",
-            "{{ .Site.BaseURL }}js/rrssb.min.js"
-          ], { callback:function() {
-			{{ if and (.IsPage) (ne .Title "About me") }}
-				var isMobile = window.matchMedia("only screen and (max-width: 800px)");
-				if(isMobile.matches) {
-					$("html, body").animate({scrollTop: $('#content').offset().top }, 500);
-                }
-			{{ end }}
-          }});
-        }
-      });
+        	asyncLoader([
+        		"{{ .Site.BaseURL }}js/rrssb.min.js"
+        		], {
+        			callback:function() {
+        				{{ if and (.IsPage) (ne .Title "About me") }}
+        				var isMobile = window.matchMedia("only screen and (max-width: 800px)");
+        				if(isMobile.matches) {
+        					$("html, body").animate({scrollTop: $('#content').offset().top }, 500);
+        				}
+        				{{ end }}
+        			}});
+        			}
+        		});
 	  (function() {
 			var cx = '006610296298419962098:o8eplgub9go';
 			var gcse = document.createElement('script');
