@@ -17,6 +17,7 @@
         		"{{ .Site.BaseURL }}js/rrssb.min.js"
         		], {
         			callback:function() {
+Prism.highlightAll(false);
         				{{ if and (.IsPage) (ne .Title "About me") }}
         				var isMobile = window.matchMedia("only screen and (max-width: 800px)");
         				if(isMobile.matches) {
