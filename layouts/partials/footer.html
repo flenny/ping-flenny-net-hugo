@@ -8,11 +8,11 @@
       asyncLoader([
         "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css",
         "//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js",
-        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js",
-        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css"
+        "{{ .Site.BaseURL }}js/prism.js",
+        "{{ .Site.BaseURL }}css/prism.css"
       ],{
         callback:function() {
-        	hljs.initHighlighting();
+        	Prism.highlightAll(false);
           asyncLoader([
             "{{ .Site.BaseURL }}css/rrssb.css",
             "{{ .Site.BaseURL }}js/rrssb.min.js"

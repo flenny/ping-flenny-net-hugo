@@ -10,9 +10,13 @@ title = "Disable SSH connections over IPv6"
 
 If a network interface offers IPv4 as well as IPv6, by default ubuntu's SSH server listens on both IP versions. In order to restrict access to protocol version 4 you have to comment in the line `#ListenAddress 0.0.0.0` in your `/etc/ssh/sshd_config`.
 
-	#ListenAddress ::
-	ListenAddress 0.0.0.0
+~~~vim
+#ListenAddress ::
+ListenAddress 0.0.0.0
+~~~
 
 Restart SSH service for the changes to take effect.
 
-	sudo service sshd restart
+~~~bash
+sudo service sshd restart
+~~~

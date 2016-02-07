@@ -11,7 +11,9 @@ image = "images/post/default-post.png"
 
 By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE). In order to enable templates for Ubuntu, Joomla, OwnCloud, WordRress or OpenVPN run the following command on your host's console.
 
-    pveam update
+~~~bash
+pveam update
+~~~
 
 You will find the templates right on your local storage > content > templates.
 

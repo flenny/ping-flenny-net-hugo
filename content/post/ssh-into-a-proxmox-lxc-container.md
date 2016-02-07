@@ -10,13 +10,15 @@ comments = true
 
 {{< figure src="/images/post/logo/proxmox.png" class="img-responsive center-block" alt="Proxmox" >}}
 
-By default it's not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.
+By default it's not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.<p class="hey">Type some code here</p>
 
 ## Option #1: Attach to the container through Proxmox host  ##
 
 Login to your Proxmox host and attach to the container with the following command.
 
-    lxc-attach --name 109
+~~~bash
+lxc-attach --name 109
+~~~
 
 The name of the container corresponds to the unique VM ID which you can see in the container's description.
 
@@ -28,11 +30,15 @@ The name of the container corresponds to the unique VM ID which you can see in t
 
 By default a Proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your Proxmox host and attach to the container with the following command.
 
-    lxc-attach --name 109
+~~~bash
+lxc-attach --name 109
+~~~
 
 Open `sshd_config`
 
-    nano /etc/ssh/sshd_config
+~~~bash
+nano /etc/ssh/sshd_config
+~~~
 
 and change the line `PermitRootLogin without-password` to `PermitRootLogin yes`. Exit nano with `Ctrl+X` and save changes with `y` and `ENTER`.
 
@@ -40,6 +46,8 @@ and change the line `PermitRootLogin without-password` to `PermitRootLogin yes`.
 
 Restart ssh service for the changes to take effect.
 
-    service ssh restart
+~~~bash
+service ssh restart
+~~~
 
 Try to establish a direct SSH connection to your container's IP (If you don't know the container's IP run `ifconfig`).
