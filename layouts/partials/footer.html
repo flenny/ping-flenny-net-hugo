@@ -21,8 +21,10 @@
         			}});
         			}
         		});
+      
+      {{with  .Site.Params.cse }}
 	  (function() {
-			var cx = '006610296298419962098:o8eplgub9go';
+			var cx = '{{.}}';
 			var gcse = document.createElement('script');
 			gcse.type = 'text/javascript';
 			gcse.async = true;
@@ -31,6 +33,7 @@
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
 		})();
+        {{end}}
     </script>
 	<script>
 	if (document.location.hostname.search({{ .Site.Params.hostname }}) !== -1) {

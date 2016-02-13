@@ -19,6 +19,7 @@ theme = "crisp"
 	githubrepo = "ping-flenny-net-hugo"
 	stackoverflow = "flenny"
 	gplus = "OliverGut"
+    cse = "006610296298419962098:o8eplgub9go"
 
 [permalinks]
     post = "/:year/:title/"
