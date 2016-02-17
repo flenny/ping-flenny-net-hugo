@@ -1,6 +1,6 @@
 +++
 date = "2016-01-26T16:46:46+01:00"
-description = "Learn how to SSH into a Proxmox lxc container."
+description = "Learn how to SSH into a Proxmox LXC container."
 draft = false
 image = "images/post/default-post.png"
 tags = ["proxmox", "lxc", "virtualization"]
