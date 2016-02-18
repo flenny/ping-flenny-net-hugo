@@ -4,6 +4,7 @@ date = "2016-02-17T18:24:49+01:00"
 description = "Learn about the reason DataTriggers might not work as they should."
 draft = false
 image = "images/post/default-post.png"
+slug = "toggle-wpf-control-visibility-with-datatriggers"
 tags = [".net", "wpf", "xaml"]
 title = "Toggle WPF control visibility with DataTriggers"
 +++

@@ -22,7 +22,7 @@ theme = "crisp"
     cse = "006610296298419962098:o8eplgub9go"
 
 [permalinks]
-    post = "/:year/:title/"
+    post = "/:year/:slug/"
 
 [author]
     name = "Oliver Gut"

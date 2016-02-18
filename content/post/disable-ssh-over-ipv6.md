@@ -4,6 +4,7 @@ date = "2016-01-31T22:31:43+01:00"
 description = "How to disable SSH over IPv6."
 draft = false
 image = "images/post/default-post.png"
+slug = "disable-ssh-connections-over-ipv6"
 tags = ["ssh", "ipv6", "ubuntu"]
 title = "Disable SSH connections over IPv6"
 +++

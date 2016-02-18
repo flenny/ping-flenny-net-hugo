@@ -4,11 +4,12 @@ date = "2016-02-03T19:37:18+01:00"
 description = "Learn how to redirect HTTP to HTTPS and any subdomain to a single HTTPS subdomain."
 draft = false
 image = "images/post/default-post.png"
+slug = "nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain"
 tags = ["nginx", "ssl"]
-title = "Nginx: Redirect any subdomain http or https to a single subdomain"
+title = "Redirect any subdomain http or https to a single subdomain in NGINX"
 +++
 
-{{< figure src="/images/post/logo/nginx.png" class="img-responsive center-block" alt="Nginx" >}}
+{{< figure src="/images/post/logo/nginx.png" class="img-responsive center-block" alt="NGINX" >}}
 
 Today I had a use case where I wanted to redirect any subdomain at any scheme (http or https) to a single https subdomain https://ping.flenny.net.
 
@@ -46,4 +47,4 @@ For a specific port you can only have one ssl configuration section (`ssl_certif
 
 **Important:** In order to properly redirect e.g. https://blog.flenny.net to https://ping.flenny.net you must have a valid ssl certificate for both subdomains.
 
-A full example of a working Nginx configuration you can get <a href="https://gist.github.com/flenny/de4b6ab465ed5b1c6886" target="_blank">here</a>.
+A full example of a working NGINX configuration you can get <a href="https://gist.github.com/flenny/de4b6ab465ed5b1c6886" target="_blank">here</a>.

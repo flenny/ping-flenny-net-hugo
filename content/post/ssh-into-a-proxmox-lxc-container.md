@@ -3,6 +3,7 @@ date = "2016-01-26T16:46:46+01:00"
 description = "Learn how to SSH into a Proxmox LXC container."
 draft = false
 image = "images/post/default-post.png"
+slug = "ssh-into-a-proxmox-lxc-container"
 tags = ["proxmox", "lxc", "virtualization"]
 title = "SSH into a Proxmox LXC container"
 comments = true

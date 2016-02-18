@@ -4,6 +4,7 @@ date = "2016-02-18T14:04:50+01:00"
 description = "Learn how to redirect HTTP to HTTP in ISS."
 draft = false
 image = "images/post/default-post.png"
+slug = "http-to-https-with-url-rewrite-module-in-iis"
 tags = ["iis", "ssl"]
 title = "HTTP to HTTPS with URL rewrite module in IIS"
 +++
