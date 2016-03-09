@@ -15,4 +15,4 @@ If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using `apt-get dist-
 you probably get the error message shown above. Adding `/index.php` manually still redirects to the ownCloud login screen. 
 
 As mentioned [here](https://github.com/owncloud/core/issues/22970) open `.htaccess` in `/var/www/owncloud` an comment out
-the line `RewriteRule .* index.php [PT,E=PATH_INFO:$1]`
+the line `RewriteRule .* index.php [PT,E=PATH_INFO:$1]` and restart apache with `service apache2 restart`.
