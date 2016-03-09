@@ -6,7 +6,7 @@ draft = false
 image = "images/post/default-post.png"
 slug = "nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain"
 tags = ["nginx", "ssl"]
-title = "Redirect any subdomain http or https to a single subdomain in NGINX"
+title = "Redirect any subdomain http or https to a single subdomain with NGINX"
 +++
 
 {{< figure src="/images/post/logo/nginx.png" class="img-responsive center-block" alt="NGINX" >}}

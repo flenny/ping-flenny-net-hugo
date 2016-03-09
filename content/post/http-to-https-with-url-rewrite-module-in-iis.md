@@ -6,7 +6,7 @@ draft = false
 image = "images/post/default-post.png"
 slug = "http-to-https-with-url-rewrite-module-in-iis"
 tags = ["iis", "ssl"]
-title = "HTTP to HTTPS with URL rewrite module in IIS"
+title = "Redirect HTTP to HTTPS with URL rewrite module in IIS"
 +++
 
 {{< figure src="/images/post/logo/iis.png" class="img-responsive center-block" alt="IIS 9" >}}
