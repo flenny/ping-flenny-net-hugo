@@ -9,7 +9,9 @@ tags = ["ssh", "ipv6", "ubuntu"]
 title = "Disable SSH connections over IPv6"
 +++
 
-If a network interface offers IPv4 as well as IPv6, by default ubuntu's SSH server listens on both IP versions. In order to restrict access to protocol version 4 you have to comment in the line `#ListenAddress 0.0.0.0` in your `/etc/ssh/sshd_config`.
+If a network interface offers IPv4 as well as IPv6, by default ubuntu's SSH server listens on both IP
+versions. In order to restrict access to protocol version 4 you have to comment in the line
+`#ListenAddress 0.0.0.0` in your `/etc/ssh/sshd_config`.
 
 ~~~vim
 #ListenAddress ::

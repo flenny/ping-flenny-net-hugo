@@ -9,7 +9,9 @@ tags = [".net", "wpf", "xaml"]
 title = "Toggle WPF control visibility with DataTriggers"
 +++
 
-A frequent source of error while working with triggers is that I set the default value directly on the control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won't work. **The default value has to be set in the control's style** as shown in the example below.
+A frequent source of error while working with triggers is that I set the default value directly on the
+control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won't
+work. **The default value has to be set in the control's style** as shown in the example below.
 
 ~~~aspnet
 <Window x:Class="FlennyNET.Examples.DataTrigger.MainWindow"

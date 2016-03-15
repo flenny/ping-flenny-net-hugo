@@ -11,7 +11,9 @@ image = "images/post/default-post.png"
 
 {{< figure src="/images/post/logo/proxmox.png" class="img-responsive center-block" alt="Proxmox" >}}
 
-By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE). In order to enable templates for Ubuntu, Joomla, OwnCloud, WordRress or OpenVPN run the following command on your host's console.
+By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).
+In order to enable templates for Ubuntu, Joomla, OwnCloud, WordRress or OpenVPN run the following command
+on your host's console.
 
 ~~~bash
 pveam update
