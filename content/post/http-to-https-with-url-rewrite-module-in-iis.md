@@ -11,7 +11,7 @@ title = "Redirect HTTP to HTTPS with URL rewrite module in IIS"
 
 {{< figure src="/images/post/logo/iis.png" class="img-responsive center-block" alt="IIS 9" >}}
 
-First download [Microsofts Web Platform Installer 5.0](http://go.microsoft.com/fwlink/?LinkId=255386).
+First download [Microsoft's Web Platform Installer 5.0](http://go.microsoft.com/fwlink/?LinkId=255386).
 It's a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for 'url rewrite' and and install the one and only search result 'URL Rewrite 2.0'. Restart IIS in order to make URL Rewrite module visible as shown below.
 
 {{< figure src="/images/post/iis-rewrite-module.png" class="img-responsive center-block" alt="IIS URL Rewrite module" >}}
