@@ -14,7 +14,7 @@ title = "Secure your website by adding some HTTP security headers with NGINX"
 In order to make your site a more secure place, it's recommended to add
 some HTTP security headers into your web servers response. Without going to much
 into detail here, the aim of this blog post is to give you a basic NGINX configuration.
-For more detailed information visit [Scott Helme's blog](https://scotthelme.co.uk/).
+For more detailed information visit {{% a_blank "Scott Helme's blog" "https://scotthelme.co.uk/" %}}.
 He did a pretty good job explaining all different types of HTTP security headers.
 
 ## X-Frame-Options ##
@@ -54,7 +54,7 @@ add_header Content-Security-Policy "default-src https:
 ## Strict-Transport-Security ##
 `Strict-Transport-Security` enforces your browser to use HTTPS over regular HTTP.
 Use HTTPS over HTTP everywhere and anytime. Even if it's a simple personal blog.
-You can get a free SSL certificate at [StartCom](https://www.startssl.com/).
+You can get a free SSL certificate at {{% a_blank "StartCom" "https://www.startssl.com/" %}}.
 Not long ago, Google also started favoring HTTPS sites in search results.
 
 ~~~nginx
@@ -66,7 +66,7 @@ add_header Strict-Transport-Security "max-age=31536000;
 With `Public-Key-Pins` your able to tell your browser in which identities he should trust.
 It protects your site from man-in-the-middle attacks and in case if your certificate authority is compromised.
 The easiest way to get your appropriate key-pins is by running a test at
-[SSL LABS](https://www.ssllabs.com/ssltest/).
+{{% a_blank "SSL LABS" "https://www.ssllabs.com/ssltest/" %}}.
 The pins are part of the result.
 
 ~~~nginx
