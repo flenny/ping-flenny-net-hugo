@@ -12,9 +12,6 @@ build:
     - arjen/hugo-build:
         version: "0.15"
         theme: crisp
-    - samueldebruyn/minify:
-        only_on_branches: master
-        js: false
 deploy:
   steps:
     - script:

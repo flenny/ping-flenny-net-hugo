@@ -2,7 +2,7 @@
 comments = true
 date = "2016-04-21T15:59:12+02:00"
 description = "KB3148812, which was released last Tuesday, causes WSUS to crash. Learn how to fix this problem."
-draft = true
+draft = false
 image = "images/post/default-post.png"
 slug = "fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates"
 tags = ["wsus", "windows server"]
