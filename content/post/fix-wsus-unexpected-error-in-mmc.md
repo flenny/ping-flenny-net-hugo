@@ -12,8 +12,8 @@ title = "Fix WSUS 'unexpected error' in MMC after installing Windows updates (KB
 
 {{< figure src="/images/post/wsus-error.png" class="img-responsive center-block" alt="wsus error" >}}
 
-After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice 'Error: Unexpected Error' message. Removing and reconnecting the server in MMC, didn't help. Neither restarting 'WSUS Service' nor rebooting the server solved the problem. According to {{% a_blank "this" "http://blogs.technet.com/b/wsus/archive/2016/04/20/known-issues-with-kb3148812.aspx" %}} article KB3148812 or KB3159706, which recently was released, broke Windows Server Update Services (WSUS). Uninstalling this specific update and rebooting the server fixed the problem.
-
 **Update 4/7/2016: Same issue with KB3159706.**
+
+After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice 'Error: Unexpected Error' message. Removing and reconnecting the server in MMC, didn't help. Neither restarting 'WSUS Service' nor rebooting the server solved the problem. According to {{% a_blank "this" "http://blogs.technet.com/b/wsus/archive/2016/04/20/known-issues-with-kb3148812.aspx" %}} article Windows update KB3148812, which recently was released, broke Windows Server Update Services (WSUS). Uninstalling this specific update and rebooting the server fixed the problem.
 
 {{< figure src="/images/post/wsus-remove-update.png" class="img-responsive center-block" alt="remove windows update" >}}
