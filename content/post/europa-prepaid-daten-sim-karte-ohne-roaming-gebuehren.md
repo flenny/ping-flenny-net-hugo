@@ -1,9 +1,9 @@
 +++
 comments = true
-date = "2016-07-10T13:58:36+02:00"
+date = "2016-07-12T13:58:36+02:00"
 description = "Europa Prepaid Daten SIM-Karte von Vodafone NL - Eine Alternative zu den teuren Roaming Datenpaketen der Schweizer Mobilfunkanbieter."
 draft = false
-image = "images/post/vodafone.jpg"
+image = "images/post/logo/vodafone.jpg"
 slug = "europa-eu-daten-sim-karte-ohne-zusaetzliche-roaming-gebuehren"
 tags = ["sim", "daten", "roaming"]
 title = "Europa Prepaid Daten SIM-Karte ohne zusätzliche Roaming Gebühren"
