@@ -19,7 +19,7 @@ Die Preise für Roaming-Datenpakete sind in den letzten zwei Jahren bei allen dr
 ## Übersicht Roaming-Datenpakete der verschiedenen Provider ##
 {{% a_blank "Salt - Roaming-Daten-Pakete zusätzlich zur Go-Option" "https://goo.gl/w7S5o5" %}}
 <br>
-{{% a_blank "Sunrise - Travel Data" "https://goo.gl/yD6cPq" %}}
+{{% a_blank "Sunrise - Travel Data" "https://goo.gl/YLzeg2" %}}
 <br>
 {{% a_blank "Swisscom - Data Travel" "https://goo.gl/gTQUnK" %}}
 
